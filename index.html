@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cumbuca · Manual do Jogador</title>
+    <meta name="description" content="Manual do jogador do servidor de Minecraft Cumbuca, Season 3. Como entrar, regras e comandos.">
+    <meta name="theme-color" content="#1a120d">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect x='5' y='3' width='6' height='2' fill='%23f2cf7e'/%3E%3Crect x='2' y='5' width='12' height='2' fill='%23f2cf7e'/%3E%3Crect x='1' y='7' width='14' height='2' fill='%23b06e3c'/%3E%3Crect x='2' y='9' width='12' height='2' fill='%238a5230'/%3E%3Crect x='4' y='11' width='8' height='2' fill='%236b3d22'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" href="#inicio" aria-label="Cumbuca, voltar ao topo">
+            <svg class="brand-bowl" viewBox="0 0 16 12" aria-hidden="true" shape-rendering="crispEdges">
+                <rect x="5" y="1" width="6" height="2" fill="#f2cf7e"/><rect x="2" y="3" width="12" height="2" fill="#f2cf7e"/>
+                <rect x="1" y="5" width="14" height="2" fill="#b06e3c"/><rect x="2" y="7" width="12" height="2" fill="#8a5230"/>
+                <rect x="4" y="9" width="8" height="2" fill="#6b3d22"/>
+            </svg>
+            Cumbuca
+        </a>
+        <nav class="nav" aria-label="Seções">
+            <a href="#entrar">Como entrar</a>
+            <a href="#discord">Discord</a>
+            <a href="#modpack">Modpack</a>
+            <a href="#funciona">Como funciona</a>
+            <a href="#regras">Regras</a>
+            <a href="#comandos">Comandos</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- TOPO -->
+    <section id="inicio" class="hero">
+        <div class="wrap hero-inner">
+            <svg class="hero-bowl" viewBox="0 0 20 14" aria-hidden="true" shape-rendering="crispEdges">
+                <rect x="7" y="1" width="6" height="1" fill="#f7dc96"/>
+                <rect x="5" y="2" width="10" height="1" fill="#f2cf7e"/>
+                <rect x="3" y="3" width="14" height="1" fill="#f2cf7e"/>
+                <rect x="2" y="4" width="16" height="1" fill="#e2b862"/>
+                <rect x="6" y="2" width="1" height="1" fill="#c9974a"/><rect x="11" y="3" width="1" height="1" fill="#c9974a"/>
+                <rect x="4" y="4" width="1" height="1" fill="#c9974a"/><rect x="14" y="4" width="1" height="1" fill="#c9974a"/>
+                <rect x="9" y="2" width="1" height="1" fill="#fff0c4"/><rect x="7" y="4" width="1" height="1" fill="#fff0c4"/>
+                <rect x="1" y="5" width="18" height="1" fill="#c98448"/>
+                <rect x="1" y="6" width="18" height="2" fill="#b06e3c"/>
+                <rect x="2" y="8" width="16" height="1" fill="#9a5d33"/>
+                <rect x="3" y="9" width="14" height="1" fill="#8a5230"/>
+                <rect x="4" y="10" width="12" height="1" fill="#7a4729"/>
+                <rect x="6" y="11" width="8" height="1" fill="#6b3d22"/>
+                <rect x="7" y="12" width="6" height="1" fill="#57311b"/>
+                <rect x="3" y="6" width="2" height="1" fill="#d8955a"/>
+            </svg>
+
+            <p class="kicker">Servidor survival entre amigos · Season 3</p>
+            <h1>Cumbuca</h1>
+            <p class="tagline">Mim dê... um convite! Aqui está tudo que você precisa para jogar.</p>
+
+            <div class="ip-card">
+                <span class="ip-label">Endereço IP do servidor</span>
+                <div class="ip-row">
+                    <code class="ip" id="server-ip">168.75.71.163</code>
+                    <button class="btn btn-primary" type="button" data-copy="168.75.71.163">Copiar</button>
+                </div>
+            </div>
+
+            <a class="btn btn-discord hero-discord" href="https://discord.gg/BPEx7Dp3R">
+                Entrar no Discord
+                <span class="hero-discord-sub">convites, avisos e chat do jogo</span>
+            </a>
+
+            <ul class="badges">
+                <li><strong>Qualquer versão do Minecraft</strong></li>
+                <li>Até 30 jogadores</li>
+                <li>Acesso só com convite</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- COMO ENTRAR -->
+    <section id="entrar" class="section">
+        <div class="wrap">
+            <h2>Como entrar</h2>
+            <p class="lead">Quatro passos e você está dentro.</p>
+            <ol class="steps">
+                <li>
+                    <h3>Peça um convite</h3>
+                    <p>Um amigo que já joga te convida com <code>/convidar SeuNick</code>. Não conhece ninguém? Peça no <a href="#discord">Discord</a>.</p>
+                </li>
+                <li>
+                    <h3>Entre no servidor</h3>
+                    <p>Funciona com qualquer versão do Minecraft. Em Multijogador, adicione o endereço <code>168.75.71.163</code>. Quer o jogo mais leve e bonito? Use o <a href="#modpack">modpack</a>, que é opcional.</p>
+                </li>
+                <li>
+                    <h3>Use sempre o mesmo nick</h3>
+                    <p>O jeito que você escrever o nick na primeira entrada fica valendo. Depois disso, maiúsculas contam: <code>Steve</code> e <code>steve</code> são contas diferentes.</p>
+                </li>
+                <li>
+                    <h3>Crie sua senha</h3>
+                    <p>Na primeira entrada aparece uma tela de registro. Nas próximas, ela pede a senha.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- DISCORD -->
+    <section id="discord" class="section section-discord">
+        <div class="wrap">
+            <div class="discord">
+                <div>
+                    <h2>Entra no Discord</h2>
+                    <p class="lead">É lá que tudo acontece: convites, avisos do servidor e o chat do jogo.</p>
+                </div>
+                <a class="btn btn-light btn-wide" href="https://discord.gg/BPEx7Dp3R">Entrar no Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODPACK -->
+    <section id="modpack" class="section section-alt">
+        <div class="wrap">
+            <h2>Modpack</h2>
+            <p class="lead">Opcional. São só mods do seu lado (client-side) de qualidade de vida: deixam o jogo mais leve e bonito, sem dar vantagem no jogo. Feito para a 26.3.</p>
+
+            <div class="split">
+                <div>
+                    <h3 class="h-small">Como instalar</h3>
+                    <ol class="mini-steps">
+                        <li>Instale o <a href="https://modrinth.com/app">Modrinth App</a>.</li>
+                        <li>Abra a página do modpack e clique em <strong>Install</strong>.</li>
+                        <li>Jogue pelo Modrinth App. A Cumbuca já aparece em Multijogador.</li>
+                    </ol>
+                    <a class="btn btn-primary btn-wide" href="https://modrinth.com/modpack/cumbuca-season-3">Baixar o modpack</a>
+                    <p class="tip"><kbd>V</kbd> Aperte V no jogo para configurar o microfone do voice chat.</p>
+                </div>
+                <div>
+                    <h3 class="h-small">O que vem nele</h3>
+                    <ul class="mods">
+                        <li>Sodium</li><li>Lithium</li><li>FerriteCore</li><li>Entity Culling</li>
+                        <li>ImmediatelyFast</li><li>Dynamic FPS</li><li>Iris Shaders</li>
+                        <li>Simple Voice Chat</li><li>Better Search</li><li>Logical Zoom</li><li>Client Sort</li>
+                        <li>Mouse Tweaks</li><li>Litematica</li><li>WorldEdit</li><li>Mod Menu</li><li>Controlling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="funciona" class="section">
+        <div class="wrap">
+            <h2>Como funciona</h2>
+            <p class="lead">O básico para não perder nada.</p>
+
+            <div class="cards">
+                <article class="card card-wide">
+                    <h3>Terrenos</h3>
+                    <p>Fora de um terreno, qualquer um pode quebrar o que você construiu.</p>
+                    <ul>
+                        <li>Pegue uma pá de ouro com <code>/kit terreno</code> (a cada 2 horas).</li>
+                        <li>Clique com o botão direito em dois cantos opostos.</li>
+                        <li>Para aumentar, clique num canto e depois no novo lugar.</li>
+                        <li>Você começa com <strong>1000 blocos</strong> e ganha <strong>+100 por hora</strong> jogada. Precisa de mais? Fale com um admin.</li>
+                        <li>Clique com um graveto no chão para ver os limites.</li>
+                        <li>Use <code>/trust nick</code> para liberar amigos.</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Dinheiro</h3>
+                    <p>Todo mundo começa com <strong>$1000</strong>.</p>
+                    <p>Placas de compra e venda: <span class="sign">[Buy]</span> <span class="sign">[Sell]</span> <span class="sign">[Free]</span> <span class="sign">[Balance]</span></p>
+                </article>
+
+                <article class="card">
+                    <h3>Loja dos jogadores</h3>
+                    <p>Anuncie o item da sua mão. Ele fica à venda mesmo com você offline. O que não vender volta para você.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Clans</h3>
+                    <p>Até 25 membros, com chat próprio, alianças e rivalidades. Sem home nem teleporte de clan.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Morte</h3>
+                    <p>Seus itens vão para um baú no lugar da morte. Ele dura <strong>36 horas</strong> e só você abre. As coordenadas aparecem no chat.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Dormir</h3>
+                    <p>Basta metade dos jogadores online deitar para pular a noite ou a tempestade.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Spawners</h3>
+                    <p>Quebre com picareta com <strong>Toque Suave</strong> para levar o spawner.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Convites</h3>
+                    <p>Quem já joga pode convidar amigos. Quem convida responde pelo convidado.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Chat no Discord</h3>
+                    <p>O chat do jogo e um canal do <a href="#discord">Discord</a> estão ligados: o que você manda num aparece no outro. Dá pra zoar quem tá online sem nem abrir o Minecraft.</p>
+                </article>
+
+                <article class="card card-alert">
+                    <h3>Nesta season</h3>
+                    <p>Sem <code>/home</code> e sem <code>/tpa</code>, mas o <code>/spawn</code> funciona. O Nether e o End estão fechados e serão liberados aos poucos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRAS -->
+    <section id="regras" class="section section-alt">
+        <div class="wrap">
+            <h2>Regras</h2>
+            <p class="lead">Só pra controlar a baderna.</p>
+            <ol class="rules">
+                <li>Quem convida, responde. Só convide quem você conhece.</li>
+                <li>Respeito no chat. Sem ofensa, preconceito ou spam. Bom senso, galera.</li>
+                <li>Sem grief e sem roubo, mesmo fora de terreno protegido.</li>
+                <li>Só mods que não dão vantagem. Não tem pra que usar x-ray nem hack, é só pra se divertir.</li>
+                <li>Achou bug ou duplicação? Avise um admin.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- COMANDOS -->
+    <section id="comandos" class="section">
+        <div class="wrap">
+            <h2>Comandos</h2>
+            <p class="lead">Toque em <span class="copy-hint">copiar</span> para levar o comando pronto para o chat.</p>
+
+            <div class="cmd-tools">
+                <label class="search">
+                    <span class="visually-hidden">Buscar comando</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                    <input id="cmd-search" type="search" placeholder="Buscar: terreno, dinheiro, skin..." autocomplete="off" enterkeyhint="search">
+                </label>
+                <div class="chips" id="cmd-chips" role="group" aria-label="Filtrar por categoria"></div>
+            </div>
+
+            <p class="cmd-count" id="cmd-count" aria-live="polite"></p>
+            <div id="cmd-list" class="cmd-list"></div>
+            <p class="cmd-empty" id="cmd-empty" hidden>Nenhum comando encontrado. Tente outra palavra.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="wrap">
+        <p>Cumbuca · Season 3</p>
+    </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
